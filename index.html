@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tracking Emoji Hero — первый экран с эмодзи, следящим за курсором, и анимацией прокрутки на GSAP и Lenis."
+    />
+    <title>Tracking Emoji Hero</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/lenis@1.3.17/dist/lenis.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <header class="header">
+          <div class="header-logo">
+            <a href="#">Out<span>flow</span></a>
+          </div>
+
+          <nav class="header-links" aria-label="Main menu">
+            <a href="#">Join Community</a>
+            <a href="#">Enroll Now</a>
+          </nav>
+        </header>
+
+        <div class="hero-heading">
+          <h1>Outflow</h1>
+        </div>
+
+        <div class="tracker" aria-hidden="true">
+          <div class="emoji">
+            <div class="emoji-face">
+              <div class="eyes">
+                <img src="images/eye.png" alt="" width="512" height="512" />
+                <img src="images/eye.png" alt="" width="512" height="512" />
+              </div>
+
+              <div class="mouth-wrapper">
+                <div class="mouth"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <div class="events-heading">
+          <h2>Events</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            maxime reiciendis, repellendus dolorem consectetur ducimus.
+          </p>
+        </div>
+
+        <div class="events-row">
+          <img
+            src="images/image-01.webp"
+            alt=""
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+          <img
+            src="images/image-04.webp"
+            alt=""
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+        </div>
+        <div class="events-row">
+          <img
+            src="images/image-02.webp"
+            alt=""
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+          <img
+            src="images/image-03.webp"
+            alt=""
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
